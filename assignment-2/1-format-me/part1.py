@@ -24,7 +24,7 @@ for _ in range(10):
     
     response = r.recvline()
     print("response: ", response)
-    r.recvline()
+    # r.recvline()
 
 r.recvuntil(b"Here's your flag: ")
 r.interactive()
