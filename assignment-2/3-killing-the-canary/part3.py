@@ -19,7 +19,7 @@ if m_hex:
 else:
     canary = int(re.match(b"Hello, ([0-9]+)\n!.*", val).groups()[0])
 
-log.info(f"Canary: {canary:x}")
+# log.info(f"Canary: {canary:x}")
 
 win = exe.symbols['print_flag']
 # log.info(hex(win))
